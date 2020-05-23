@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UserTable from './UserTable'
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reloads.
+          Edit <code>src/App.js</code> and save to view results.
         </p>
         <a
           className="App-link"
@@ -18,6 +19,10 @@ function App() {
         >
           Learn React
         </a>
+        <div className="flex-large">
+          <h2>View users</h2>
+          <UserTable />
+        </div>
       </header>
     </div>
   );
